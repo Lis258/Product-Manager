@@ -35,8 +35,8 @@ class ProductManagerTest {
 
     @Test
     void shouldSearchBookName() {
-        Product[] actual = manager.searchBy("BookName3");
-        Product[] expected = new Product[]{book3};
+        Product[] actual = manager.searchBy("BookName1");
+        Product[] expected = new Product[]{book1};
         assertArrayEquals(expected, actual);
     }
 
@@ -49,8 +49,8 @@ class ProductManagerTest {
 
     @Test
     void shouldSearchSmartphoneName() {
-        Product[] actual = manager.searchBy("SmartphoneName1");
-        Product[] expected = new Product[]{smartphone1};
+        Product[] actual = manager.searchBy("SmartphoneName4");
+        Product[] expected = new Product[]{smartphone4};
         assertArrayEquals(expected, actual);
     }
 
